@@ -16,7 +16,8 @@
 
 export const allModes = {
   xsm: {
-    viewport: "xs",
+    /* viewport: "xs", */
+    viewport: "xsm",
   },
   md: {
     viewport: "md",
