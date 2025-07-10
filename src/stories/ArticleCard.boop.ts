@@ -5,9 +5,9 @@ const meta: Meta<typeof ArticleCard> = {
   title: "Components/ArticleCard",
   component: ArticleCard,
   parameters: {
-    /*     layout: "centered", */
+    layout: "centered",
   },
-  tags: ["autodocs"],
+  /* tags: ["autodocs"], */
   argTypes: {
     title: {
       control: "text",
@@ -88,5 +88,41 @@ export const TechArticle: Story = {
     imageUrl:
       "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop",
     imageAlt: "React logo and code",
+  },
+};
+
+export const LightTheme: Story = {
+  args: {
+    title: "Light Theme Example",
+    description:
+      "This story demonstrates the component in light theme mode with proper contrast and readability.",
+    author: "Light User",
+    creationDate: "March 20, 2024",
+    imageUrl:
+      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop",
+    imageAlt: "Light theme example",
+  },
+  parameters: {
+    themes: {
+      defaultTheme: "light",
+    },
+  },
+};
+
+export const DarkTheme: Story = {
+  args: {
+    title: "Dark Theme Example",
+    description:
+      "This story demonstrates the component in dark theme mode with proper contrast and readability.",
+    author: "Dark User",
+    creationDate: "March 20, 2024",
+    imageUrl:
+      "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop",
+    imageAlt: "Dark theme example",
+  },
+  parameters: {
+    themes: {
+      defaultTheme: "dark",
+    },
   },
 };

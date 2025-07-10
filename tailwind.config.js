@@ -5,10 +5,16 @@ export default {
     "./index.html",
     "./.storybook/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: ["class", '[data-mode="dark"]'],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
+        light: {
+          primary: "#ffffff",
+          secondary: "#f8fafc",
+          text: "#1e293b",
+          "text-muted": "#64748b",
+        },
         dark: {
           primary: "#444555",
           secondary: "#2d2d3a",

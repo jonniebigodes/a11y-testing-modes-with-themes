@@ -18,7 +18,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
   imageAlt,
 }) => {
   return (
-    <article className="group relative bg-white dark:bg-dark-primary rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-0">
+    <article className="group relative bg-light-primary dark:bg-dark-primary rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-0">
       {/* Card Container - Horizontal Layout */}
       <div className="flex h-full">
         {/* Image Section - 1/3 width */}
@@ -38,25 +38,19 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
         <div className="w-2/3 p-8 flex flex-col justify-between">
           {/* Main Content */}
           <div className="flex-1">
-            {/* Category Badge */}
-            <div className="inline-flex items-center px-4 py-2 rounded-full text-xs font-semibold bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md mb-6">
-              <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
-              Technology
-            </div>
-
             {/* Title */}
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-dark-text mb-4 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+            <h2 className="text-2xl font-bold text-light-text dark:text-dark-text mb-4 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
               {title}
             </h2>
 
             {/* Description */}
-            <p className="text-gray-600 dark:text-dark-text-muted text-base leading-relaxed mb-6 line-clamp-3">
+            <p className="text-light-text-muted dark:text-dark-text-muted text-base leading-relaxed mb-6 line-clamp-3">
               {description}
             </p>
           </div>
 
           {/* Footer - Author Info Only */}
-          <div className="flex items-center space-x-4 pt-6 border-t border-gray-100/50 dark:border-gray-700/50">
+          <div className="flex items-center space-x-4 pt-6 border-t border-gray-200/50 dark:border-gray-700/50">
             <div className="relative">
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 via-purple-600 to-pink-500 flex items-center justify-center shadow-lg">
                 <span className="text-white text-sm font-bold">
@@ -71,10 +65,10 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 opacity-0 group-hover:opacity-30 blur-sm transition-opacity duration-300"></div>
             </div>
             <div className="flex-1">
-              <p className="text-sm font-semibold text-gray-900 dark:text-dark-text">
+              <p className="text-sm font-semibold text-light-text dark:text-dark-text">
                 {author}
               </p>
-              <p className="text-xs text-gray-500 dark:text-dark-text-muted font-medium">
+              <p className="text-sm text-light-text-muted dark:text-dark-text-muted font-medium">
                 {creationDate}
               </p>
             </div>
