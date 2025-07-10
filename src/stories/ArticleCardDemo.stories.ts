@@ -10,8 +10,12 @@ const meta = {
     chromatic: {
       //🔶 Test each story for ArticleCard in two modes
       modes: {
-        light: allModes["light"],
-        dark: allModes["dark"],
+        /*  light: allModes["light"],
+        dark: allModes["dark"], */
+        mobile: allModes["xsm"],
+        desktop: allModes["md"],
+        large: allModes["xl"],
+        custom: allModes["specific"],
       },
     },
   },
