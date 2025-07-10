@@ -24,6 +24,10 @@ const preview: Preview = {
         lg: { name: "Large", styles: { width: "1024px", height: "900px" } },
         xl: { name: "XL", styles: { width: "1280px", height: "900px" } },
         "2xl": { name: "2XL", styles: { width: "1536px", height: "900px" } },
+        /*  customsmall: {
+          name: "Custom Small",
+          styles: { width: "375px", height: "375px" },
+        }, */
       },
     },
   },

@@ -12,10 +12,10 @@ const meta = {
       modes: {
         /*  light: allModes["light"],
         dark: allModes["dark"], */
-        mobile: allModes["xsm"],
+        /*  mobile: allModes["xsm"],
         desktop: allModes["md"],
         large: allModes["xl"],
-        custom: allModes["specific"],
+        custom: allModes["specific"], */
       },
     },
   },
@@ -33,6 +33,31 @@ export const MembersOnly: Story = {
   parameters: {
     themes: {
       defaultTheme: "light",
+    },
+  },
+};
+
+export const FirstStory: Story = {
+  args: {},
+  globals: {
+    viewport: {
+      value: "md",
+    },
+  },
+};
+
+export const SecondStory: Story = {
+  globals: {
+    viewport: {
+      value: "md",
+    },
+  },
+  parameters: {
+    chromatic: {
+      modes: {
+        lg: allModes["md"],
+        xl: allModes["xl"],
+      },
     },
   },
 };
